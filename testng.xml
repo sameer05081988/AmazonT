@@ -15,8 +15,8 @@
   <test thread-count="5" name="Test2">
     <classes>
       
-      <class name="com.AmazonTestCases.AmazonBase"/>
-      <class name="com.AmazonTestCases.AccountCreationTC"/>
+      <!-- <class name="com.AmazonTestCases.AmazonBase"/>
+      <class name="com.AmazonTestCases.AccountCreationTC"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
