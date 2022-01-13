@@ -8,15 +8,24 @@
     <classes>
       <class name="com.AmazonTestCases.AmazonLoginTC"/>
       <class name="com.AmazonTestCases.AmazonBase"/>
-      
-      
     </classes>
   </test> <!-- Test -->
+  
   <test thread-count="5" name="Test2">
     <classes>
       
-      <!-- <class name="com.AmazonTestCases.AmazonBase"/>
-      <class name="com.AmazonTestCases.AccountCreationTC"/> -->
+      <class name="com.AmazonTestCases.AmazonBase"/>
+      <class name="com.AmazonTestCases.AccountCreationTC"/>
     </classes>
   </test> <!-- Test -->
+  
+  
+  <test thread-count="5" name="Test3">
+    <classes>
+      
+      <class name="com.AmazonTestCases.AmazonBase"/>
+      <class name="com.AmazonTestCases.AddToCartTC"/>
+    </classes>
+  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

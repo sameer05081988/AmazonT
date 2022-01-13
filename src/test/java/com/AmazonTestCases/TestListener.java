@@ -7,8 +7,8 @@ import com.aventstack.extentreports.Status;
 import com.utility.test.ExtentManager;
 import com.utility.test.ExtentTestManager;
 
-public class TestListener implements ITestListener {
-
+public class TestListener extends AmazonBase implements ITestListener {
+	AmazonBase b=new AmazonBase();
 
 	public void onStart(ITestContext context) {
 		System.out.println("*** Test Suite " + context.getName() + " started ***");
@@ -28,11 +28,16 @@ public class TestListener implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("*** Executed " + result.getMethod().getMethodName() + " test successfully...");
 		ExtentTestManager.getTest().log(Status.PASS, "Test passed");
+		
+		b.takeScreenshot(result.getName());
+		
+	
 	}
 
 	public void onTestFailure(ITestResult result) {
 		System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed...");
 		ExtentTestManager.getTest().log(Status.FAIL, "Test Failed");
+		b.takeScreenshot(result.getName());
 	}
 
 	public void onTestSkipped(ITestResult result) {

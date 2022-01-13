@@ -15,4 +15,15 @@
       </class> <!-- com.AmazonTestCases.AccountCreationTC -->
     </classes>
   </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test3(failed)">
+    <classes>
+      <class name="com.AmazonTestCases.AddToCartTC">
+        <methods>
+          <include name="setup"/>
+          <include name="checkBrowsingHistory"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.AmazonTestCases.AddToCartTC -->
+    </classes>
+  </test> <!-- Test3(failed) -->
 </suite> <!-- Failed suite [Suite] -->

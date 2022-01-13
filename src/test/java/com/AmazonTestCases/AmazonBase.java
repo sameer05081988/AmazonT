@@ -56,7 +56,7 @@ public class AmazonBase {
 		}
 	}
 	
-	//@AfterClass
+	@AfterClass
 	public void tearDown() {
 		
 		driver.quit();

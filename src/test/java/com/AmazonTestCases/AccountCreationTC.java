@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.amazonPageObjects.AccountCreationObjects;
 import com.utility.test.ExcelTestData;
-
+@Listeners(com.AmazonTestCases.TestListener.class)
 public class AccountCreationTC extends AmazonBase {
 	//AccountCreationObjects account=new AccountCreationObjects(driver);
 	

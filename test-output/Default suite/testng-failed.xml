@@ -6,7 +6,7 @@
       <class name="com.AmazonTestCases.AddToCartTC">
         <methods>
           <include name="setup"/>
-          <include name="addToCart"/>
+          <include name="checkBrowsingHistory"/>
         </methods>
       </class> <!-- com.AmazonTestCases.AddToCartTC -->
     </classes>
